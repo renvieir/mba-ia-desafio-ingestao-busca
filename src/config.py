@@ -5,7 +5,7 @@ load_dotenv()
 COLLECTION_NAME = os.getenv("COLLECTION_NAME")
 CONNECTION_STRING = os.getenv("DATABASE_URL")
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GOOGLE_EMBEDDING_MODEL = os.getenv("GOOGLE_EMBEDDING_MODEL","models/embedding-001")
+GOOGLE_EMBEDDING_MODEL = os.getenv("GOOGLE_EMBEDDING_MODEL", "models/embedding-001")
 PDF_PATH = os.getenv("PDF_PATH")
 
 def get_pdf_path():
