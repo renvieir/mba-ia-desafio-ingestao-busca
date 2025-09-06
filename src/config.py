@@ -10,7 +10,7 @@ PDF_PATH = os.getenv("PDF_PATH")
 
 def get_pdf_path():
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    pdf_path = os.path.join(current_dir, os.getenv("PDF_PATH"))
+    pdf_path = os.path.join(current_dir, PDF_PATH)
 
     if not PDF_PATH or not os.path.isfile(pdf_path):
         raise FileNotFoundError(f"PDF file not found at path: {pdf_path}")
