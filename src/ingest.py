@@ -16,7 +16,7 @@ def ingest_pdf():
     print(f"Ingesting PDF from path: {pdf_path}")
 
     # --- 1. Load PDF ---
-    loader = PyPDFLoader("example.pdf")
+    loader = PyPDFLoader(pdf_path)
     documents = loader.load()
 
     # --- 2. Split into chunks ---
